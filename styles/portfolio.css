@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+.fun-font {
+  font-family: 'Righteous', cursive;
+}
+
+/* Custom Color Palette */
+:root {
+  --onyx: #37393a;
+  --orange-pantone: #ff5400;
+  --amber: #ffbd00;
+  --air-superiority-blue: #06AED5;
+  --russian-violet: #480355;
+  --dark-teal: #034732;
+}
+
+.russian-violet-bg {
+  background-color: var(--russian-violet);
+}
+
+.onyx-bg {
+  background-color: var(--onyx);
+}
+
+.orange-pantone-bg {
+  background-color: var(--orange-pantone);
+}
+
+.amber-bg {
+  background-color: var(--amber);
+}
+
+.air-superiority-blue-bg {
+  background-color: var(--air-superiority-blue);
+}
+
+.dark-teal-bg {
+  background-color: var(--dark-teal);
+}
+
+.custom-cursor {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" fill="%23ff5400"/><circle cx="24" cy="24" r="8" fill="%23ffffff"/></svg>') 24 24, auto;
+}
+
+.custom-cursor button, .custom-cursor a {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" fill="%2306AED5"/><circle cx="24" cy="24" r="8" fill="%23ffffff"/></svg>') 24 24, pointer;
+}
+
+/* Animations */
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+}
+
+@keyframes bounce-medium {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(-3deg); }
+}
+
+@keyframes bounce-fast {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50% { transform: translateY(-8px) scale(1.05); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  33% { transform: translateY(-5px) translateX(2px); }
+  66% { transform: translateY(2px) translateX(-2px); }
+}
+
+.bounce-1 { animation: bounce-slow 4s ease-in-out infinite; }
+.bounce-2 { animation: bounce-medium 3.5s ease-in-out infinite 0.5s; }
+.bounce-3 { animation: bounce-fast 3s ease-in-out infinite 1s; }
+.bounce-4 { animation: float 4.5s ease-in-out infinite 1.5s; }
+.bounce-5 { animation: bounce-slow 3.8s ease-in-out infinite 2s; }
+.bounce-6 { animation: bounce-medium 4.2s ease-in-out infinite 0.8s; }
+
+/* Organic blob shapes */
+.blob-1 {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+.blob-2 {
+  border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+}
+.blob-3 {
+  border-radius: 70% 30% 50% 50% / 30% 50% 70% 50%;
+}
+
+/* Animate blob shapes */
+@keyframes blob-morph-1 {
+  0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  50% { border-radius: 30% 60% 40% 70% / 60% 40% 60% 30%; }
+}
+@keyframes blob-morph-2 {
+  0%, 100% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+  50% { border-radius: 60% 30% 40% 70% / 30% 70% 60% 40%; }
+}
+@keyframes blob-morph-3 {
+  0%, 100% { border-radius: 70% 30% 50% 50% / 30% 50% 70% 50%; }
+  50% { border-radius: 40% 60% 30% 70% / 60% 30% 50% 70%; }
+}
+
+.blob-animate-1 { animation: blob-morph-1 6s ease-in-out infinite; }
+.blob-animate-2 { animation: blob-morph-2 7s ease-in-out infinite; }
+.blob-animate-3 { animation: blob-morph-3 5s ease-in-out infinite; }
+
+/* Background blob shapes */
+.bg-blob-1 { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+.bg-blob-2 { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+.bg-blob-3 { border-radius: 70% 30% 50% 50% / 30% 50% 70% 50%; }
+.bg-blob-4 { border-radius: 40% 60% 30% 70% / 60% 40% 60% 30%; }
+.bg-blob-5 { border-radius: 50% 50% 80% 20% / 30% 70% 50% 50%; }
+.bg-blob-6 { border-radius: 80% 20% 50% 50% / 60% 30% 80% 20%; }
+
+/* Background blob animations */
+@keyframes bg-blob-morph-1 {
+  0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  33% { border-radius: 30% 60% 40% 70% / 60% 40% 60% 30%; }
+  66% { border-radius: 70% 30% 60% 40% / 30% 70% 40% 60%; }
+}
+@keyframes bg-blob-morph-2 {
+  0%, 100% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+  50% { border-radius: 60% 30% 40% 70% / 30% 70% 60% 40%; }
+}
+@keyframes bg-blob-morph-3 {
+  0%, 100% { border-radius: 70% 30% 50% 50% / 30% 50% 70% 50%; }
+  50% { border-radius: 40% 60% 30% 70% / 60% 30% 50% 70%; }
+}
+
+.bg-blob-animate-1 { animation: bg-blob-morph-1 8s ease-in-out infinite; }
+.bg-blob-animate-2 { animation: bg-blob-morph-2 10s ease-in-out infinite; }
+.bg-blob-animate-3 { animation: bg-blob-morph-3 12s ease-in-out infinite; }
+
+/* Text shadows for accessibility */
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8), 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.text-shadow-strong {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9), 0 1px 4px rgba(0, 0, 0, 0.7);
+}
