@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 @custom-variant dark (&:is(.dark *));
@@ -131,7 +134,7 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50;
+    @apply border border-border outline-ring/50;
   }
 
   body {
